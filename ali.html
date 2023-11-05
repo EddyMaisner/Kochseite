@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="/img/logo_small.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body onload="includeHTML()">
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Start</a></li>
+            <li><a class="menu__item" href="rezeptdestages.html">Rezept des Tages</a></li>
+            <li><a class="menu__item" href="./kontakt.html">Kontakt</a></li>
+            <li><a class="menu__item" href="./impressum.html">Impressum</a></li>
+
+        </ul>
+
+
+
+        <div class="burger-logo">
+
+            <img src="./img/logo.png" alt="">
+
+        </div>
+    </div>
+
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="paella-header">
+        <h1>Paella mit Meeresfrüchten</h1>
+        <img class="paella" src="./img/spanish-paella.jpg" alt="">
+    </div>
+
+    <div class="plan">
+
+        <div class="simple"><img src="./icons/clock-regular.svg" alt="">30 min</div>
+        <div class="simple"><img src="./icons/brain-solid.svg" alt="">Simple</div>
+        <div class="simple"><img src="./icons/calendar-alt-regular.svg" alt="">15.4.2023</div>
+    </div>
+    <div class="rezept-table">
+
+
+        <span class="zutaten-list"> Zutaten Für</span><input id="p-number" type="number" value="1" min="1"
+            max="50"><button onclick="calculatepaella()">Portionen</button>
+
+        <table id="table">
+            <tr>
+                <td><span id="menge1">100</span><span>g</span></td>
+                <td><span>Meeresfrüchte</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge2">65</span><span>ml</span></td>
+                <td><span>(Paella- oder Risottoreis)</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge3">20</span><span>g</span></td>
+                <td><span>Erbsen, TK</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge4">0.5</span></td>
+                <td><span>Zwiebel(n)</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge5">0.5</span></td>
+                <td><span>Knoblauchzehe(n)</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge6">0.25</td>
+                <td><span>Paprikaschote(n), rote</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge7">1.25</span><span>EL</span></td>
+                <td><span>Olivenöl, natives</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge8">0.25</span><span>TL</span></td>
+                <td><span>Safran, alternativ Kurkuma</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge9">0.25</span><span>TL</span></td>
+                <td><span>Paprikapulver</span></td>
+            </tr>
+
+            <tr>
+                <td><span id="menge10">0.25</span><span>Msp.</span></td>
+                <td><span>Cayennepfeffer</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge11">175</span><span>ml</span></td>
+                <td><span>Gemüsebrühe</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge12">25 </span><span>ml</span></td>
+                <td><span>Weißwein</span></td>
+            </tr>
+            <tr>
+                <td><span>n.B.</span></td>
+                <td><span>Salz und Pfeffer</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <p class="koch-anweisung">Zubereitung</p>
+    <div class="plan">
+        <div class="simple"><img src="./icons/clock-regular.svg" alt=""> ca 30 Minuten</div>
+        <div class="simple"><img src="./icons/clock-regular.svg" alt="">Gesamtzeit ca 50 Minuten</div>
+    </div>
+    <div class="cook-rezept">
+        <span>3 EL Olivenöl erhitzen, Zwiebeln und die Hälfte des kleingehackten Knoblauchs glasig dünsten. Den Reis
+            hinzufügen, kurz mit andünsten und mit Safran/Kurkuma und Pfeffer würzen. Mit dem Wein und der Brühe
+            auffüllen, zum Kochen bringen und unter Rühren garen.
+
+            In einer separaten Pfanne 3 EL Olivenöl erhitzen. Nun die Meeresfrüchte, die in Streifen geschnittene
+            Paprika, die Erbsen und den restlichen Knoblauch kurz anbraten und zu dem Reis geben. Alles so lange
+            köcheln, bis die Brühe weitestgehend verkocht ist. Mit Paprika, Cayennepfeffer und Salz abschmecken.</span>
+    </div>
+    <p class="koch-anweisung">Rezept erstellt von</p>
+    <div class="koch-div">
+        <img style="object-fit: cover;" class="koch" src="./img/aliimg.jpg" alt="">
+        <span class="koch-name">Ali</span>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

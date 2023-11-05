@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="/img/logo_small.png" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js"></script>
+  <title>Impressum</title>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="index.html">Start</a></li>
+      <li><a class="menu__item" href="rezeptdestages.html">Rezept des Tages</a></li>
+      <li><a class="menu__item" href="./kontakt.html">Kontakt</a></li>
+      <li><a class="menu__item" href="./impressum.html">Impressum</a></li>
+
+    </ul>
+
+
+    <div class="burger-logo">
+
+      <img src="./img/logo.png" alt="">
+
+    </div>
+
+  </div>
+</head>
+
+
+
+<body onload="includeHTML()">
+  <div w3-include-html="templates/header.html"></div>
+  <div class="impress-body">
+    <h1>Impressum</h1>
+
+    <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+    <p>Miyssr Ali<br />
+      adam-steger-wald stra&szlig;e 35<br />
+      28329 Bremen</p>
+
+    <h2>Kontakt</h2>
+    <p>Telefon: &#91;Telefonnummer&#93;<br />
+      E-Mail: miyssr-ali@outlook.de</p>
+
+    <p>Quelle: <a
+        href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de/impressum-generator.html</a>
+    </p>
+  </div>
+  <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

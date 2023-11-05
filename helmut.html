@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="/img/logo_small.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body onload="includeHTML()">
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Start</a></li>
+            <li><a class="menu__item" href="rezeptdestages.html">Rezept des Tages</a></li>
+            <li><a class="menu__item" href="./kontakt.html">Kontakt</a></li>
+            <li><a class="menu__item" href="./impressum.html">Impressum</a></li>
+
+        </ul>
+
+
+
+        <div class="burger-logo">
+
+            <img src="./img/logo.png" alt="">
+
+        </div>
+    </div>
+
+    <div w3-include-html="templates/header.html"></div>
+
+    <div class="paella-header">
+        <h1>Plov</h1>
+        <img class="paella" src="./img/plov.jpg" alt="">
+    </div>
+
+    <div class="plan">
+
+        <div class="simple"><img src="./icons/clock-regular.svg" alt="">30 min</div>
+        <div class="simple"><img src="./icons/brain-solid.svg" alt="">Simple</div>
+        <div class="simple"><img src="./icons/calendar-alt-regular.svg" alt="">15.4.2023</div>
+    </div>
+    <div class="rezept-table">
+
+
+        <span class="zutaten-list"> Zutaten Für</span><input id="p-number" type="number" value="1" min="1"
+            max="50"><button onclick="plov()">Portionen</button>
+
+        <table id="table">
+            <tr>
+                <td><span id="menge1">500</span><span>g</span></td>
+                <td><span>Fleisch (Schwein, Rind, Hammel, Lamm, Kalb)</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge2">250</span><span>g</span></td>
+                <td><span>Reis</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge3">500</span><span>g</span></td>
+                <td><span>Möhren</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge4">2</span></td>
+                <td><span>Knoblauchzehe(n)</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge5">1</span></td>
+                <td><span>Lorbeerblatt</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge6">3</span> TL</td>
+                <td><span>Gemüsebrühepulver</span></td>
+            </tr>
+            <tr>
+                <td><span>n.B.</span></td>
+                <td><span>Salz und Pfeffer</span></td>
+            </tr>
+            <tr>
+                <td><span id="menge8"></span><span></span></td>
+                <td><span>Fett zum Braten</span></td>
+            </tr>
+
+
+        </table>
+    </div>
+
+    <p class="koch-anweisung">Zubereitung</p>
+    <div class="plan">
+        <div class="simple"><img src="./icons/clock-regular.svg" alt=""> ca 20 Minuten</div>
+        <div class="simple"><img src="./icons/clock-regular.svg" alt="">Gesamtzeit ca 1h20 Minuten</div>
+    </div>
+    <div class="cook-rezept">
+        <span>
+            Fleisch in ca. 2 - 3 cm große Würfel schneiden wie für Gulasch. In einem großen Topf Fett erhitzen und
+            das
+            Fleisch kräftig anbraten. Kräftig mit Salz und Pfeffer würzen. Zwiebeln in Streifen schneiden, Knoblauch
+            würfeln und beides kurz mitdünsten. Lorbeerblätter in den Topf geben. Mit etwas Wasser ablöschen.
+            Möhren in grobe Stifte schneiden (ca. 1 x 1 x 4 cm) und auf das Fleisch schichten, nicht umrühren! Den
+            ungekochten Reis auf die Möhren schichten, nicht umrühren! Kräftig mit Brühpulver würzen. Mit so viel
+            Wasser
+            auffüllen, sodass der Reis ca. 2,5 cm mit Wasser bedeckt ist. Einen Deckel auflegen und bei kleiner
+            Hitze
+            ca. 30 - 45 Min. köcheln lassen, zwischendurch nicht umrühren. Eventuell gegen Ende noch etwas Wasser
+            nachfüllen. Es soll aber keine Suppe werden, sondern die Flüssigkeit soll komplett vom Reis aufgesogen
+            werden.
+
+            Das Gericht vorsichtig mit einer Schaumkelle auf einer großen Platte anrichten.
+
+            Dazu schmeckt traditionell ein frischer Salat aus Tomaten, Zwiebeln und Rettich.
+
+            Anmerkung: Meine Kinder mögen es auch sehr gerne, ich erzähle ihnen immer die Geschichte von den
+            russischen
+            Kriegern, die sich vor ca. 200 Jahren dieses Gericht über offenem Feuer bereitet haben. Das schmeckt
+            dann
+            gleich dreimal so gut!
+        </span>
+    </div>
+    <p class="koch-anweisung">Rezept erstellt von</p>
+    <div class="koch-div">
+        <img style="object-fit: cover;" class="koch" src="./img/helmutimg.jpg" alt="">
+        <span class="koch-name">Helmut</span>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

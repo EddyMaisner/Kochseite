@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="/img/logo_small.png" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js"></script>
+  <title>Kontakt</title>
+</head>
+
+<body  style="background-color: grey; " onload="includeHTML()">
+
+
+
+
+
+  <div w3-include-html="templates/header.html"></div>
+
+  <div class="kontakt-div">
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+
+      <ul class="menu__box">
+        <li><a class="menu__item" href="index.html">Start</a></li>
+        <li><a class="menu__item" href="rezeptdestages.html">Rezept des Tages</a></li>
+        <li><a class="menu__item" href="./kontakt.html">Kontakt</a></li>
+        <li><a class="menu__item" href="./impressum.html">Impressum</a></li>
+
+      </ul>
+
+
+      <div class="burger-logo">
+
+        <img src="./img/logo.png" alt="">
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <div>
+    <form action="./success.html" method="post">
+
+      <input name="name" placeholder="Dein Name">
+      <input type="email" placeholder="Deine E-mail">
+      <textarea name="message" placeholder="Deine Nachricht an uns"></textarea>
+      <button type="submit">Nachricht Senden</button>
+
+    </form>
+
+
+  </div>
+
+
+
+
+
+
+  <div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+</html>
